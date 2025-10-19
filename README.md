@@ -43,32 +43,24 @@ chmod +x run.sh
 Ikuti petunjuk yang muncul di layar untuk memberikan izin akses.
 
 5. Menjalankan Script dengan make
-Setelah semua siap, Anda dapat menjalankan script dengan mudah menggunakan make. Di dalam direktori fotomhs-amikom, jalankan perintah berikut:
-
-**make run**
-
-Jika error maka bisa menjalankan
-
-**./run.sh**
+Setelah semua siap, Anda dapat menjalankan script dengan mudah menggunakan make. Di dalam direktori fotomhs-amikom, jalankan perintah berikut: **make run** Jika error maka bisa menjalankan **./run.sh**
 
 Penjelasan:
 
 Anda akan diminta untuk memasukkan:
 
-Tahun Ajaran (misalnya: 2011)
-
-Prodi (misalnya: 11)
-
-NIM (misalnya: 1111)
+- Tahun Ajaran (misalnya: 2011)
+- Prodi (misalnya: 11)
+- NIM (misalnya: 1111)
 
 **Jika URL valid dan foto ditemukan, maka foto akan otomatis diunduh ke folder Download di perangkat Android Anda.**
 
 6. Lokasi Penyimpanan
 Foto yang diunduh akan disimpan di folder Download di penyimpanan internal perangkat Anda, dan bisa langsung diakses melalui aplikasi File Manager atau Galeri.
 
-Troubleshooting
+## Troubleshooting
 Masalah Hak Akses Penyimpanan:
 Jika Anda mengalami masalah dengan hak akses penyimpanan, pastikan Anda telah menjalankan perintah termux-setup-storage dan memberikan izin akses penyimpanan pada Termux.
 
-URL Tidak Ditemukan:
+## URL Tidak Ditemukan:
 Jika URL yang dihasilkan tidak valid (misalnya, foto tidak ditemukan), pastikan data yang Anda masukkan sudah benar: tahun ajaran, prodi, dan NIM.
