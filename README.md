@@ -46,13 +46,19 @@ Ikuti petunjuk yang muncul di layar untuk memberikan izin akses.
 Setelah semua siap, Anda dapat menjalankan script dengan mudah menggunakan make. Di dalam direktori fotomhs-amikom, jalankan perintah berikut:
 
 **make run**
+
 Jika error maka bisa menjalankan
+
 **./run.sh**
+
 Penjelasan:
 
 Anda akan diminta untuk memasukkan:
+
 Tahun Ajaran (misalnya: 2011)
+
 Prodi (misalnya: 11)
+
 NIM (misalnya: 1111)
 
 **Jika URL valid dan foto ditemukan, maka foto akan otomatis diunduh ke folder Download di perangkat Android Anda.**
