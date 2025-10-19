@@ -21,22 +21,7 @@ Di mana:
 ## Prasyarat
 Sebelum menjalankan script ini, pastikan Anda memenuhi beberapa prasyarat berikut:
 - **Termux** harus terinstal di perangkat Android Anda.
-- Aplikasi **make**, **wget**, dan **curl** untuk mengunduh file dan memeriksa URL.
-
-### Cara Install Termux:
-1. **Install Termux**:
- - Pastikan Anda sudah menginstal **Termux** dari [Google Play Store](https://play.google.com/store/apps/details?id=com.termux) atau [F-Droid](https://f-droid.org/packages/com.termux/).
-
-2. **Install Git, Make, Curl, dan Wget di Termux**:
- Setelah menginstal **Termux**, buka aplikasi **Termux** dan jalankan perintah berikut untuk menginstal beberapa aplikasi yang diperlukan:
-
-
-
-Setelah Termux Terinstall, Jalankan Setup Penyimpanan:
-Agar file yang diunduh dapat disimpan di penyimpanan internal Anda, Anda perlu memberikan izin akses kepada Termux untuk mengakses penyimpanan perangkat Anda:
-
-termux-setup-storage
-Ikuti petunjuk yang muncul di layar untuk memberikan izin akses.
+- Library **make**, **wget**, dan **curl** untuk mengunduh file dan memeriksa URL.
 
 ### Menggunakan Script
 1. Clone Repository
@@ -49,11 +34,15 @@ Untuk mendapatkan script ini, clone repository ke dalam Termux Anda dengan perin
 - pkg update && pkg upgrade
 - pkg install git make curl wget
 
-2. Set Hak Akses untuk Script
+3. Set Hak Akses untuk Script
 Setelah meng-clone repository, berikan hak akses eksekusi pada script run.sh dengan perintah:
 chmod +x run.sh
 
-3. Menjalankan Script dengan make
+4. Beri akses agar file download bisa langsung masuk ke folder Download 
+- **termux-setup-storage**
+Ikuti petunjuk yang muncul di layar untuk memberikan izin akses.
+
+5. Menjalankan Script dengan make
 Setelah semua siap, Anda dapat menjalankan script dengan mudah menggunakan make. Di dalam direktori fotomhs-amikom, jalankan perintah berikut:
 
 **make run**
