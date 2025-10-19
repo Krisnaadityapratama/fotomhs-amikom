@@ -30,9 +30,7 @@ Sebelum menjalankan script ini, pastikan Anda memenuhi beberapa prasyarat beriku
 2. **Install Git, Make, Curl, dan Wget di Termux**:
  Setelah menginstal **Termux**, buka aplikasi **Termux** dan jalankan perintah berikut untuk menginstal beberapa aplikasi yang diperlukan:
 
- pkg update
- pkg upgrade
- pkg install git make curl wget
+
 
 Setelah Termux Terinstall, Jalankan Setup Penyimpanan:
 Agar file yang diunduh dapat disimpan di penyimpanan internal Anda, Anda perlu memberikan izin akses kepada Termux untuk mengakses penyimpanan perangkat Anda:
@@ -40,13 +38,16 @@ Agar file yang diunduh dapat disimpan di penyimpanan internal Anda, Anda perlu m
 termux-setup-storage
 Ikuti petunjuk yang muncul di layar untuk memberikan izin akses.
 
-Menggunakan Script
+### Menggunakan Script
 1. Clone Repository
 Untuk mendapatkan script ini, clone repository ke dalam Termux Anda dengan perintah berikut:
 
-git clone https://github.com/Krisnaadityapratama/fotomhs-amikom.git
-cd fotomhs-amikom
-Gantilah username dengan nama pengguna GitHub Anda.
+- git clone https://github.com/Krisnaadityapratama/fotomhs-amikom.git
+- cd fotomhs-amikom
+
+2. Update dan install Kebutuhan 
+- pkg update && pkg upgrade
+- pkg install git make curl wget
 
 2. Set Hak Akses untuk Script
 Setelah meng-clone repository, berikan hak akses eksekusi pada script run.sh dengan perintah:
@@ -55,7 +56,9 @@ chmod +x run.sh
 3. Menjalankan Script dengan make
 Setelah semua siap, Anda dapat menjalankan script dengan mudah menggunakan make. Di dalam direktori fotomhs-amikom, jalankan perintah berikut:
 
-make run
+**make run**
+Jika error maka bisa menjalankan
+**./run.sh**
 Penjelasan:
 
 Anda akan diminta untuk memasukkan:
