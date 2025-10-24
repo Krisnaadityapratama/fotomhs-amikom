@@ -1,5 +1,5 @@
 #!/bin/bash
-# KRISNA ADITYA PRATAMA UPDATE
+# KRISNA ADITYA PRATAMA UPDATE 2
 # Meminta input pengguna untuk tahun ajaran, prodi, dan NIM
 echo "Masukkan Tahun Ajaran (misal: 2011):"
 read tahun_ajaran
